@@ -1,0 +1,131 @@
+<h2 mat-dialog-title>Employee form</h2>
+<mat-dialog-content>
+    <div class="row">
+        <div class="col12">
+
+            <form [formGroup]="EmpForm" (ngSubmit)="OnFormSubmit()">
+
+                <div class="row">
+                    <div class="col-6">
+
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>First name</mat-label>
+                            <input formControlName="Fname" type="text" matInput placeholder="firstname">
+                            <mat-error>
+                                this field is manadatory
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Last name</mat-label>
+                            <input formControlName="Lname" type="text" matInput placeholder="lastname">
+                            <mat-error>
+                                this field is manadatory
+                            </mat-error>
+                        </mat-form-field>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input formControlName="Email" type="email" matInput placeholder="email">
+                            <mat-error>
+                                this field is manadatory
+                            </mat-error>
+                        </mat-form-field>
+
+                    </div>
+                    <div class="col-6">
+
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Contact</mat-label>
+                            <input formControlName="Contact" type="number" matInput placeholder="contact">
+                            <mat-error>
+                                this field is manadatory
+                            </mat-error>
+                        </mat-form-field>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field appearance="fill" appearance="outline">
+                            <mat-label>Date of Birth</mat-label>
+                            <input matInput [matDatepicker]="picker" formControlName="dob">
+                            <mat-hint>MM/DD/YYYY</mat-hint>
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                            <mat-error>
+                                this field is manadatory
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Experience</mat-label>
+                            <input formControlName="Experience" type="number" matInput placeholder="experience">
+                            <mat-error>
+                                this field is manadatory
+                            </mat-error>
+                        </mat-form-field>
+
+                    </div>
+                </div>
+
+                <div class="row" class="mt-3 mb-3">
+                    <div class="col-12">
+                        <mat-label>Genders</mat-label><br><br>
+                        <mat-radio-group aria-label="Select an option " formControlName="Gender">
+                            <mat-radio-button value="Male">Male</mat-radio-button>
+                            <mat-radio-button value="Female">Female</mat-radio-button>
+                            <mat-error *ngIf="f['Gender'].hasError('required')">
+                                this field is manadatory
+                            </mat-error>
+                        </mat-radio-group>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Education</mat-label>
+                            <mat-select formControlName="Education">
+                                <mat-option *ngFor="let ed of education" [value]="ed">
+                                    {{ed}}
+                                </mat-option>
+                            </mat-select>
+
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Company</mat-label>
+                            <input formControlName="Company" type="string" matInput placeholder="company">
+                            <mat-error>
+                                this field is manadatory
+                            </mat-error>
+                        </mat-form-field>
+
+                    </div>
+                </div>
+                <mat-dialog-actions align="end" class=" d-flex justify-content-between">
+                    <button mat-raised-button color="warn" type="button" [mat-dialog-close]="false">Cancel</button>
+                    <button mat-raised-button color="primary" type="submit" cdkFocusInitial>{{obj ? 'Update' :
+                        'Save'}}</button>
+                </mat-dialog-actions>
+            </form>
+        </div>
+    </div>
+
+
+
+</mat-dialog-content>

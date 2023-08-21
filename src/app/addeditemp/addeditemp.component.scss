@@ -1,0 +1,22 @@
+
+.mat-form-field{
+    width: 100%;
+}
+
+::ng-deep mat-radio-button:not(:first-child){
+    margin-left: 15px;
+}
+
+
+// .action{
+//     padding: 0px 25px 20px;
+// }
+button{
+    flex: 1;
+}
+
+
+
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 16px;
+  }

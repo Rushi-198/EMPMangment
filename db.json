@@ -1,0 +1,82 @@
+{
+  "posts": [
+    {
+      "title": "xfgsgdfbbf4gn",
+      "author": "fddfbdfb4gnl",
+      "id": 1
+    },
+    {
+      "title": "sdggf",
+      "author": "sgdf",
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": [
+    {
+      "name": "typicode"
+    }
+  ],
+  "employees": [
+    {
+      "Fname": "rushi",
+      "Lname": "sdfsd",
+      "Contact": 4563,
+      "Email": "fdv",
+      "Gender": "Female",
+      "Experience": 453,
+      "Education": "Diploma",
+      "Company": "sfdsdv",
+      "dob": "2023-08-08T18:30:00.000Z",
+      "id": 32
+    },
+    {
+      "Fname": "xxdfv",
+      "Lname": "xxxxefv",
+      "Contact": 4512,
+      "Email": "xxx",
+      "Gender": "Female",
+      "Experience": 2,
+      "Education": "Diploma",
+      "Company": "56",
+      "dob": "2023-08-09T18:30:00.000Z",
+      "id": 33
+    },
+    {
+      "Fname": "zxvsdvszdvs",
+      "Lname": "xxxxefv",
+      "Contact": 4512,
+      "Email": "xxx",
+      "Gender": "Female",
+      "Experience": 2,
+      "Education": "Diploma",
+      "Company": "56",
+      "dob": "2023-08-09T18:30:00.000Z",
+      "id": 34
+    },
+    {
+      "Fname": "sdfvsdf",
+      "Lname": "sdfsd",
+      "Contact": 4563,
+      "Email": "fdv",
+      "Gender": "Female",
+      "Experience": 453,
+      "Education": "Diploma",
+      "Company": "sfdsdv",
+      "dob": "2023-08-08T18:30:00.000Z",
+      "id": 35
+    },
+    {
+      "Fname": "AX",
+      "Lname": "ZX",
+      "Contact": 4,
+      "Email": "sc",
+      "Gender": "Female",
+      "Experience": 5,
+      "Education": "matric",
+      "Company": "xcb",
+      "dob": "2023-08-09T18:30:00.000Z",
+      "id": 36
+    }
+  ]
+}
